@@ -6,8 +6,11 @@ readme = "README.md"
 requires-python = ">=3.13,<3.14"
 dependencies = [
     "datasetsforecast>=1.0.0",
+    "dotenv>=0.9.9",
     "matplotlib>=3.10.7",
     "neuralforecast>=3.1.2",
+    "omegaconf>=2.3.0",
+    "openai>=2.8.0",
     "optuna>=4.5.0",
     "torch>=2.9.0",
 ]
