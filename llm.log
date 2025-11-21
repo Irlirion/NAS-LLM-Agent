@@ -1,0 +1,27 @@
+Trial 1 finished with value: 1.2899 and parameters: hidden_size=128 n_head=8 dropout=0.1 conv_hidden_size=32 distil=False activation='relu' encoder_layers=3 decoder_layers=2
+Trial 2 finished with value: 1.2558 and parameters: hidden_size=64 n_head=4 dropout=0.2 conv_hidden_size=16 distil=True activation='gelu' encoder_layers=2 decoder_layers=1
+Trial 3 finished with value: 1.3283 and parameters: hidden_size=32 n_head=16 dropout=0.05 conv_hidden_size=64 distil=False activation='gelu' encoder_layers=1 decoder_layers=2
+Trial 4 finished with value: 1.2379 and parameters: hidden_size=256 n_head=4 dropout=0.3 conv_hidden_size=8 distil=True activation='relu' encoder_layers=4 decoder_layers=1
+Trial 5 finished with value: 1.3722 and parameters: hidden_size=64 n_head=16 dropout=0.1 conv_hidden_size=32 distil=False activation='relu' encoder_layers=2 decoder_layers=1
+Trial 6 finished with value: 1.2485 and parameters: hidden_size=128 n_head=4 dropout=0.2 conv_hidden_size=64 distil=True activation='relu' encoder_layers=1 decoder_layers=2
+Trial 7 finished with value: 1.2506 and parameters: hidden_size=256 n_head=8 dropout=0.05 conv_hidden_size=16 distil=False activation='gelu' encoder_layers=4 decoder_layers=2
+Trial 8 finished with value: 1.2351 and parameters: hidden_size=128 n_head=4 dropout=0.1 conv_hidden_size=32 distil=False activation='gelu' encoder_layers=3 decoder_layers=1
+Trial 9 finished with value: 1.3577 and parameters: hidden_size=64 n_head=8 dropout=0.2 conv_hidden_size=32 distil=False activation='relu' encoder_layers=2 decoder_layers=1
+Trial 10 finished with value: 1.3107 and parameters: hidden_size=64 n_head=8 dropout=0.1 conv_hidden_size=32 distil=True activation='relu' encoder_layers=4 decoder_layers=2
+Trial 11 finished with value: 1.3539 and parameters: hidden_size=32 n_head=4 dropout=0.1 conv_hidden_size=64 distil=False activation='relu' encoder_layers=3 decoder_layers=2
+Trial 12 finished with value: 1.2349 and parameters: hidden_size=128 n_head=4 dropout=0.2 conv_hidden_size=32 distil=False activation='gelu' encoder_layers=3 decoder_layers=1
+Trial 13 finished with value: 1.2733 and parameters: hidden_size=256 n_head=16 dropout=0.2 conv_hidden_size=32 distil=False activation='relu' encoder_layers=4 decoder_layers=2
+Trial 14 finished with value: 1.3910 and parameters: hidden_size=32 n_head=8 dropout=0.1 conv_hidden_size=16 distil=True activation='gelu' encoder_layers=2 decoder_layers=1
+Trial 15 finished with value: 1.2907 and parameters: hidden_size=128 n_head=8 dropout=0.1 conv_hidden_size=32 distil=False activation='gelu' encoder_layers=3 decoder_layers=2
+Trial 16 finished with value: 1.2699 and parameters: hidden_size=256 n_head=16 dropout=0.05 conv_hidden_size=32 distil=False activation='gelu' encoder_layers=4 decoder_layers=2
+Trial 17 finished with value: 1.2389 and parameters: hidden_size=128 n_head=4 dropout=0.1 conv_hidden_size=64 distil=True activation='gelu' encoder_layers=2 decoder_layers=1
+Trial 18 finished with value: 1.2560 and parameters: hidden_size=128 n_head=4 dropout=0.1 conv_hidden_size=32 distil=False activation='gelu' encoder_layers=3 decoder_layers=2
+Trial 19 finished with value: 1.2841 and parameters: hidden_size=256 n_head=16 dropout=0.1 conv_hidden_size=32 distil=False activation='relu' encoder_layers=4 decoder_layers=1
+Trial 20 finished with value: 1.3628 and parameters: hidden_size=32 n_head=16 dropout=0.2 conv_hidden_size=32 distil=False activation='relu' encoder_layers=4 decoder_layers=1
+Trial 21 finished with value: 1.2841 and parameters: hidden_size=256 n_head=16 dropout=0.1 conv_hidden_size=32 distil=False activation='relu' encoder_layers=4 decoder_layers=1
+Trial 22 finished with value: 1.4563 and parameters: hidden_size=64 n_head=8 dropout=0.1 conv_hidden_size=16 distil=False activation='relu' encoder_layers=2 decoder_layers=1
+Trial 23 finished with value: 1.2560 and parameters: hidden_size=128 n_head=4 dropout=0.1 conv_hidden_size=32 distil=False activation='gelu' encoder_layers=3 decoder_layers=2
+Trial 24 finished with value: 1.3399 and parameters: hidden_size=32 n_head=4 dropout=0.1 conv_hidden_size=32 distil=False activation='relu' encoder_layers=4 decoder_layers=1
+Trial 25 finished with value: 1.2925 and parameters: hidden_size=256 n_head=16 dropout=0.3 conv_hidden_size=8 distil=False activation='relu' encoder_layers=4 decoder_layers=1
+{'hidden_size': 128, 'n_head': 4, 'dropout': 0.2, 'conv_hidden_size': 32, 'distil': False, 'activation': 'gelu', 'encoder_layers': 3, 'decoder_layers': 1}
+Best metric: 1.2349
