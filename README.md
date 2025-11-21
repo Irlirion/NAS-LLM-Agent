@@ -2,6 +2,20 @@
 
 Сравнение подбора гиперпараметров ML модели с помощью optuna и AI агента.
 
+## Структура репозитория
+
+```bash
+.
+├── assets - папка с изображениями для README
+├── notebooks - папка с ноутбуками
+│   ├── 01_optuna.ipynb - ноутбук с подбором гиперпараметров с помощью optuna
+│   ├── 02_llm.ipynb - ноутбук с подбором гиперпараметров с помощью AI агента
+├── pyproject.toml - файл с зависимостями проекта
+├── README.md - этот файл
+├── .env.template - шаблон файла с переменными окружения
+└── uv.lock - файл с зафиксированными версиями зависимостей
+```
+
 ## Данные
 
 - Датасет ETTh1 и ETTh2
@@ -9,7 +23,7 @@
 
 ## Модель
 
-## Informer
+### Informer
 
 Модель Informer решает проблемы вычислительной сложности стандартного Transformer для долгосрочного прогнозирования.
 
@@ -64,3 +78,20 @@
    ```
 
 4. Запустить ноутбуки в папке `notebooks`
+
+## Результаты
+
+| Датасет | Метод    | MSE   | Best params                                                                                                                                                |
+| ------- | -------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ETTh1   | Optuna   | 0.615 | {'hidden_size': 256, 'n_head': 2, 'dropout': 0.1, 'conv_hidden_size': 32, 'distil': False, 'activation': 'relu', 'encoder_layers': 1, 'decoder_layers': 1} |
+| ETTh1   | AI Agent | 0.612 | {'hidden_size': 128, 'n_head': 4, 'dropout': 0.2, 'conv_hidden_size': 32, 'distil': False, 'activation': 'gelu', 'encoder_layers': 3, 'decoder_layers': 1} |
+| ETTh2   | Optuna   | 0.389 | {'hidden_size': 32, 'n_head': 2, 'dropout': 0.1, 'conv_hidden_size': 64, 'distil': True, 'activation': 'gelu', 'encoder_layers': 3, 'decoder_layers': 1}   |
+| ETTh2   | AI Agent | 0.391 | {'hidden_size': 32, 'n_head': 16, 'dropout': 0.2, 'conv_hidden_size': 32, 'distil': True, 'activation': 'relu', 'encoder_layers': 4, 'decoder_layers': 2}  |
+
+Количество итераций для обоих методов - 25.
+
+AI агент показал чуть лучший результат на ETTh1, но чуть худший на ETTh2 по сравнению с Optuna.
+
+## Выводы
+
+AI агент способен эффективно подбирать гиперпараметры для модели временных рядов, демонстрируя результаты, сопоставимые с традиционными методами оптимизации, такими как Optuna.
